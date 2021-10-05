@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>date</title>
+</head>
+<body>
+<script>
+//1. print today day
+let today_date = new Date();
+document.write ("1. Today date is = " +today_date);
+
+
+//2. print which day today is 
+
+let week = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday "];
+let today_day = today_date.getDay();
+document.write("<br>2. Today day is = " + week[today_day]);
+
+// 3. Print the minutes just now
+console.dir(today_date);
+let mimutes = today_date.getMinutes();
+document.write("<br>3. Minutes just now = " + mimutes);
+
+//4. print current time 
+document.write ("<br>4. Current time is = " + today_date.getHours() +" hr: "+today_date.getMinutes()+"min");
+
+</script>
+</body>
+</html>
